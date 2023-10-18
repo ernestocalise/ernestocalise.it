@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ernesto Calise</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display:,300, 400, 700" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid scrollContainer">
+
+       <section class="scrollTarget" id="intro">
+        <div class="row" >
+            <div class="col-sm-12 col-md-6">
+                <div class="container p-md-5 mt-4 m-md-5">
+                    <h1>Ciao, Sono Ernesto Calise</h1>
+                    <p class="subtitle">Software/Web Developer</p>
+                    <p id="introduction">
+                        Ho sviluppato molte delle mie capacità da autodidatta. <br />
+                        Fin da piccolo appassionato alla follia dell'informatica ricordo ancora quando a 12 anni scoprii C# tramite un libro di Mondadori e fu amore a prima vista. Da quel momento ho continuato risolvere qualsiasi problema con un una soluzione software. </br>
+                        I miei studi sono stati successivamente arricchiti da vari corsi seguiti su Udemy e vari progetti personali e lavorativi. Il mio obiettivo è poter lavorare su progetti in diversi ambiti informatici. <br />
+                        Non mi spaventano le sfide, ne vedo soltanto l'occasione di poter crescere personalmente e professionalmente arricchendo il mio bagaglio di conoscenze.
+                    </p>
+                    <div id="iconContainer">
+                        <a href="https://www.linkedin.com/in/ernestocalise/" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="mailto:info@ernestocalise.it" class="icon"><i class="fa-regular fa-envelope"></i></a>
+                        <a href="https://github.com/ernestocalise" class="icon"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 pe-0 mob-hid" style="background-image: url('profile-min.jpg');  background-size: cover; height:100vh;">
+
+            </div>
+        </div>
+       </section> 
+       <section class="scrollTarget" id="resume">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="container p-md-5 mt-4 m-md-5" >
+                        <h1>Le mie Esperienze</h1>
+                        <div class="ps-3 pt-3" id="resumeContainer">
+                            <h5>Sviluppatore di Software</h5>
+                            <p class="we-subtitle">gen 2021 - dic 2021 <br />
+                                Sviluppo di sistema MES per Ferrarelle.<br />
+                                SQL Server, C#, WWB.NET, TSQL
+                            </p>
+                            <h5>Sviluppatore Back-End & Automation Tester</h5>
+                            <p class="we-subtitle">gen 2021 - dic 2021 <br />
+                                Sviluppo di software di automation testing.<br />
+                                Puppetter, Typescript, Javascript
+                            </p>
+                            <h5>Sviluppatore Full-Stack</h5>
+                            <p class="we-subtitle">lug 2020 - set 2020 <br />
+                                Sviluppo di applicazioni per la facilitazione reclutamento per 3em Engineering<br />
+                                PHP, MySql, Laravel 8
+                                HTML5, CSS, BootStrap4, JavaScript, Vue.JS
+                            </p>
+                            <h5>Sviluppatore Full-Stack</h5>
+                            <p class="we-subtitle">lug 2020 - ago 2020 <br />
+                                Sviluppo del sistema per la gestione degli ordini per 3em Engineering<br />
+                                PHP, MySql, Laravel 7
+                                HTML5, CSS, BootStrap4, JavaScript, JQuery
+                            </p>
+                            <h5>Sviluppatore Front-End</h5>
+                            <p class="we-subtitle">gen 2020 - lug 2020 <br />
+                                Sviluppo Front-End del sistema NPLConnector per FCA <br />
+                                HTML5, CSS, BootStrap4, JavaScript, JQuery
+                            </p>
+                            <h5>Sviluppatore Full-Stack</h5>
+                            <p class="we-subtitle">ott 2019 - gen 2020 <br />
+                                Sviluppo e installazione del sistema SEVEL Swap per Sevel S.p.A.<br />
+                                ASP.NET MVC, ASP.NET WebAPI Restful, C#, SQL Server, TSQL. <br />
+                                HTML5, CSS, BootStrap4, JavaScript ES6, JQuery
+                            </p>
+                            <h5>Sviluppatore Back-End</h5>
+                            <p class="we-subtitle">giu 2019 - ott 2020 <br />
+                                Sviluppo e installazione del Sistema Genetics FM per Genetics S.p.A.<br />
+                                C#, .NET Framework, OWIN
+                            </p>
+                            <h5>Sviluppatore Full-Stack</h5>
+                            <p class="we-subtitle">giu 2019 - ott 2020 <br />
+                                Sviluppo e installazione del sistema di tracciabilità gomme per FCA Italy, FCA Poland, FCA Serbia & FCA India<br />
+                                ASP.NET MVC, ASP.NET WebAPI Restful, C#, SQL Server, TSQL. <br />
+                                HTML5, CSS, BootStrap4, JavaScript ES6, JQuery
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 pe-0 pt-5 mob-hid" style="height:100vh;">
+                    <canvas id="chartTarget"></canvas>
+                </div>
+            </div>
+       </section>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const ctx = document.getElementById('chartTarget');
+
+        new Chart(ctx, {
+          type: 'pie',
+          data: {
+            labels: ['C#', 'ASP.NET', 'SQL Server', 'PHP', 'Typescript', 'JavaScript', 'MySql', 'JQuery', 'Vue.JS', 'WinWrapBasic.NET'],
+            datasets: [{
+              label: '# of Project',
+              data: [4, 3, 5, 2, 1, 6, 2, 4, 1, 1],
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true
+              }
+            }
+          }
+        });
+      </script>
+</body>
+</html>

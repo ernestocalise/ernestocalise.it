@@ -1,0 +1,41 @@
+body{
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 1.8;
+    color: #b3b3b3
+}
+h1, h2, h3, h4, h5 {
+    color: #000;
+    font-family: "Playfair Display", times, serif;
+  }
+.we-subtitle {
+    font-size: 1rem;
+    font-weight: 300;
+    margin-left:0.45rem;
+}
+.subtitle {
+font-size: 1.25rem;
+  font-weight: 300;
+}
+.icon {
+    color: #F73859;
+    margin-left: 0.75rem;
+    font-size:1.5rem;
+}
+.scrollContainer {
+    scroll-snap-type: y mandatory;
+    overflow: auto;
+    height: 100vh;
+}
+.scrollTarget {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+#resumeContainer {
+    overflow-y:scroll;
+    height: 80vh;
+}
+@media only screen and (max-width: 600px) {
+    .mob-hid {
+        display: none;
+    }
+}
