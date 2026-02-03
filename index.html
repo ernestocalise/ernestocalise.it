@@ -1,124 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ernesto Calise</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ernesto Calise | Full Stack Developer</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800|Playfair+Display:,300, 400, 700" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
-<body>
-    <div class="container-fluid scrollContainer">
 
-       <section class="scrollTarget" id="intro">
-        <div class="row" >
-            <div class="col-sm-12 col-md-6">
-                <div class="container p-md-5 mt-4 m-md-5">
-                    <h1>Ciao, Sono Ernesto Calise</h1>
-                    <p class="subtitle">Software/Web Developer</p>
-                    <p id="introduction">
-                        Ho sviluppato molte delle mie capacità da autodidatta. <br />
-                        Fin da piccolo appassionato alla follia dell'informatica ricordo ancora quando a 12 anni scoprii C# tramite un libro di Mondadori e fu amore a prima vista. Da quel momento ho continuato risolvere qualsiasi problema con un una soluzione software. </br>
-                        I miei studi sono stati successivamente arricchiti da vari corsi seguiti su Udemy e vari progetti personali e lavorativi. Il mio obiettivo è poter lavorare su progetti in diversi ambiti informatici. <br />
-                        Non mi spaventano le sfide, ne vedo soltanto l'occasione di poter crescere personalmente e professionalmente arricchendo il mio bagaglio di conoscenze.
-                    </p>
-                    <div id="iconContainer">
-                        <a href="https://www.linkedin.com/in/ernestocalise/" class="icon"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="mailto:info@ernestocalise.it" class="icon"><i class="fa-regular fa-envelope"></i></a>
-                        <a href="https://github.com/ernestocalise" class="icon"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
+<body class="bg-slate-50 text-slate-800">
+    <header class="fixed w-full bg-white/80 backdrop-blur shadow-sm z-50">
+        <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="font-bold text-xl">Ernesto Calise</h1>
+            <div class="space-x-6 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-600">Chi sono</a>
+                <a href="#skills" class="hover:text-blue-600">Competenze</a>
+                <a href="#experience" class="hover:text-blue-600">Esperienza</a>
+                <a href="#projects" class="hover:text-blue-600">Progetti</a>
+                <a href="#contact" class="hover:text-blue-600">Contatti</a>
             </div>
-            <div class="col-sm-12 col-md-6 pe-0 mob-hid" style="background-image: url('profile-min.jpg');  background-size: cover; height:100vh;">
-
+        </nav>
+    </header>
+    <section class="min-h-screen flex items-center justify-center text-center px-6">
+        <div>
+            <h2 class="text-5xl font-bold mb-4">Full Stack Developer</h2>
+            <p class="text-lg text-slate-600 mb-6">Sviluppo software industriale, web app e videogiochi</p>
+            <a href="#contact"
+                class="bg-blue-600 text-white px-6 py-3 rounded-2xl shadow hover:scale-105 transition">Contattami</a>
+        </div>
+    </section>
+    <section id="about" class="max-w-5xl mx-auto px-6 py-20">
+        <h3 class="text-3xl font-bold mb-6">Chi sono</h3>
+        <p class="text-slate-600 leading-relaxed">
+            Sviluppatore Full Stack con esperienza in consulenza enterprise, applicazioni desktop .NET,
+            integrazione OPC UA, automazione industriale e sviluppo videogiochi con Unity.
+            Mi piace progettare software pulito, performante e facile da mantenere.
+        </p>
+    </section>
+    <section id="skills" class="bg-white py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-10">Competenze tecniche</h3>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold mb-3">Backend</h4>
+                    <p class="text-sm text-slate-600">C#, .NET, .NET Core, API REST, SQL Server, PHP, Xamarin, Node.JS,
+                        Laravel</p>
+                </div>
+                <div class="p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold mb-3">Frontend</h4>
+                    <p class="text-sm text-slate-600">CSS, Tailwind, JavaScript, Blazor, WPF, WinForms, Vue 3, </p>
+                </div>
+                <div class="p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold mb-3">Altro</h4>
+                    <p class="text-sm text-slate-600">Unity, Git, Docker, CI/CD, Azure, Linux, Industrial IoT</p>
+                </div>
             </div>
         </div>
-       </section> 
-       <section class="scrollTarget" id="resume">
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="container p-md-5 mt-4 m-md-5" >
-                        <h1>Le mie Esperienze</h1>
-                        <div class="ps-3 pt-3" id="resumeContainer">
-                            <h5>Sviluppatore di Software</h5>
-                            <p class="we-subtitle">gen 2021 - dic 2021 <br />
-                                Sviluppo di sistema MES per Ferrarelle.<br />
-                                SQL Server, C#, WWB.NET, TSQL
-                            </p>
-                            <h5>Sviluppatore Back-End & Automation Tester</h5>
-                            <p class="we-subtitle">gen 2021 - dic 2021 <br />
-                                Sviluppo di software di automation testing.<br />
-                                Puppetter, Typescript, Javascript
-                            </p>
-                            <h5>Sviluppatore Full-Stack</h5>
-                            <p class="we-subtitle">lug 2020 - set 2020 <br />
-                                Sviluppo di applicazioni per la facilitazione reclutamento per 3em Engineering<br />
-                                PHP, MySql, Laravel 8
-                                HTML5, CSS, BootStrap4, JavaScript, Vue.JS
-                            </p>
-                            <h5>Sviluppatore Full-Stack</h5>
-                            <p class="we-subtitle">lug 2020 - ago 2020 <br />
-                                Sviluppo del sistema per la gestione degli ordini per 3em Engineering<br />
-                                PHP, MySql, Laravel 7
-                                HTML5, CSS, BootStrap4, JavaScript, JQuery
-                            </p>
-                            <h5>Sviluppatore Front-End</h5>
-                            <p class="we-subtitle">gen 2020 - lug 2020 <br />
-                                Sviluppo Front-End del sistema NPLConnector per FCA <br />
-                                HTML5, CSS, BootStrap4, JavaScript, JQuery
-                            </p>
-                            <h5>Sviluppatore Full-Stack</h5>
-                            <p class="we-subtitle">ott 2019 - gen 2020 <br />
-                                Sviluppo e installazione del sistema SEVEL Swap per Sevel S.p.A.<br />
-                                ASP.NET MVC, ASP.NET WebAPI Restful, C#, SQL Server, TSQL. <br />
-                                HTML5, CSS, BootStrap4, JavaScript ES6, JQuery
-                            </p>
-                            <h5>Sviluppatore Back-End</h5>
-                            <p class="we-subtitle">giu 2019 - ott 2020 <br />
-                                Sviluppo e installazione del Sistema Genetics FM per Genetics S.p.A.<br />
-                                C#, .NET Framework, OWIN
-                            </p>
-                            <h5>Sviluppatore Full-Stack</h5>
-                            <p class="we-subtitle">giu 2019 - ott 2020 <br />
-                                Sviluppo e installazione del sistema di tracciabilità gomme per FCA Italy, FCA Poland, FCA Serbia & FCA India<br />
-                                ASP.NET MVC, ASP.NET WebAPI Restful, C#, SQL Server, TSQL. <br />
-                                HTML5, CSS, BootStrap4, JavaScript ES6, JQuery
-                            </p>
-                        </div>
+    </section>
+    <section id="experience" class="max-w-5xl mx-auto px-6 py-20">
+        <h3 class="text-3xl font-bold mb-10">Esperienza lavorativa</h3>
+        <div class="space-y-8">
+            <div>
+                <h4 class="font-semibold text-lg">Full Stack Developer - Automotive</h4>
+                <span class="text-sm text-slate-500">2023 – Presente</span>
+                <p class="text-slate-600 mt-2">
+                    Sviluppo applicazioni enterprise, integrazione sistemi industriali, dashboard di monitoraggio,
+                    protocolli OPC UA e strumenti di automazione.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-lg">Full Stack MES Engineer</h4>
+                <span class="text-sm text-slate-500">01/2023 – 10/2023</span>
+                <p class="text-slate-600 mt-2">
+                    Design, sviluppo e implementazione del sistema MES per un noto cliente enterprise del settore
+                    Food&Beverage italiana.
+                </p>
+            </div>
+            <div>
+                <h4 class="font-semibold text-lg">Full Stack Developer - Automotive</h4>
+                <span class="text-sm text-slate-500">05/2019 – 11/2020</span>
+                <p class="text-slate-600 mt-2">
+                    Sviluppo di microservizi software per noto cliente automotive.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="bg-white py-20">
+        <div class="max-w-6xl mx-auto px-6">
+            <h3 class="text-3xl font-bold mb-10">Progetti</h3>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <a target="_blank" href="https://github.com/ernestocalise/PlcScanner">
+                    <div class="p-6 rounded-2xl shadow">
+                        <h4 class="font-semibold">PLC Scanner</h4>
+                        <p class="text-sm text-slate-600">Tool per discovery e monitoraggio dispositivi OPC UA.</p>
                     </div>
+                </a>
+                <div class="p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold">CALISE ERP</h4>
+                    <p class="text-sm text-slate-600">Control, Analytics & Logistics Integration Services for Enterprise.</p>
                 </div>
-                <div class="col-sm-12 col-md-6 pe-0 pt-5 mob-hid" style="height:100vh;">
-                    <canvas id="chartTarget"></canvas>
+
+                <div class="p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold">WorldX</h4>
+                    <p class="text-sm text-slate-600">Platform shooter 3d iperfrenetico.</p>
+                </div>
+
+                <div class="p-6 rounded-2xl shadow">
+                    <h4 class="font-semibold">ChessX</h4>
+                    <p class="text-sm text-slate-600">Un nuovo modo di giocare a scacchi.</p>
                 </div>
             </div>
-       </section>
-
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script>
-        const ctx = document.getElementById('chartTarget');
-
-        new Chart(ctx, {
-          type: 'pie',
-          data: {
-            labels: ['C#', 'ASP.NET', 'SQL Server', 'PHP', 'Typescript', 'JavaScript', 'MySql', 'JQuery', 'Vue.JS', 'WinWrapBasic.NET'],
-            datasets: [{
-              label: '# of Project',
-              data: [4, 3, 5, 2, 1, 6, 2, 4, 1, 1],
-              borderWidth: 1
-            }]
-          },
-          options: {
-            scales: {
-              y: {
-                beginAtZero: true
-              }
-            }
-          }
-        });
-      </script>
+        </div>
+    </section>
+    <section id="contact" class="max-w-5xl mx-auto px-6 py-20 text-center">
+        <h3 class="text-3xl font-bold mb-6">Contatti</h3>
+        <p class="text-slate-600 mb-6">Scrivimi per collaborazioni o opportunità lavorative</p>
+        <div class="space-x-6">
+            <a href="mailto:info@ernestocalise.it" class="underline">Email</a>
+            <a href="https://www.linkedin.com/in/ernestocalise/" class="underline">LinkedIn</a>
+            <a href="https://github.com/ernestocalise" class="underline">GitHub</a>
+        </div>
+    </section>
+    <footer class="text-center text-xs text-slate-500 py-6">
+        © 2026 Ernesto Calise – All rights reserved
+    </footer>
 </body>
+
 </html>
