@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PLCScanner | Industrial OPC UA Discovery Tool</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+  <!-- Navbar -->
+  <header class="fixed w-full bg-white/80 backdrop-blur shadow-sm z-50">
+    <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="font-bold text-xl">PLCScanner</h1>
+      <div class="space-x-6 text-sm font-medium">
+        <a href="#features" class="hover:text-blue-600 hidden md:inline-block">Funzionalità</a>
+        <a href="#screenshots" class="hover:text-blue-600 hidden md:inline-block">Screenshot</a>
+        <a href="#tech" class="hover:text-blue-600 hidden md:inline-block">Tecnologie</a>
+        <a href="#download" class="hover:text-blue-600 hidden md:inline-block">Download</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center justify-left text-center px-6" id="hero">
+    <div class="max-w-xl bg-white rounded-2xl pt-5 pb-5 opacity-95">
+      <h2 class="text-5xl font-bold mb-6">PLCScanner</h2>
+    <p class="text-lg text-slate-600 mb-8">
+    Progettato per generare simulatori ad alta fedeltà, permette in pochi click di esporre una copia della struttura di un PLC e di simularne l'intero funzionamento.
+    </p>  
+    <div class="flex justify-center gap-4">
+        <a href="#download" class="bg-blue-600 text-white px-6 py-3 rounded-2xl shadow hover:scale-105 transition opacity-100">Scarica</a>
+        <a target="_blank" href="https://github.com/ernestocalise/PlcScanner" class="border border-slate-300 px-6 py-3 rounded-2xl hover:bg-slate-100 transition opacity-100">Sorgenti</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="bg-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <h3 class="text-3xl font-bold mb-12 text-center">Funzionalità principali</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="p-6 rounded-2xl shadow">
+          <h4 class="font-semibold mb-2">Browse Gerarchico</h4>
+          <p class="text-sm text-slate-600">Navigazione completa del namespace con struttura ad albero.</p>
+        </div>
+        <div class="p-6 rounded-2xl shadow">
+          <h4 class="font-semibold mb-2">Monitor Real-time</h4>
+          <p class="text-sm text-slate-600">Sottoscrizione variabili ed eventi con aggiornamenti live..</p>
+        </div>
+        <div class="p-6 rounded-2xl shadow">
+          <h4 class="font-semibold mb-2">Multi-Protocol</h4>
+          <p class="text-sm text-slate-600">Supporto sicurezza, certificati e connessioni industriali.</p>
+        </div>
+        <div class="p-6 rounded-2xl shadow">
+          <h4 class="font-semibold mb-2">OPC Server</h4>
+          <p class="text-sm text-slate-600">Supporta l'esposizione del mapping generato tramite OPC Server.</p>
+        </div>
+        <div class="p-6 rounded-2xl shadow">
+          <h4 class="font-semibold mb-2">Simulazione Routine</h4>
+          <p class="text-sm text-slate-600">Permette di registrare il funzionamento di un PLC o configurarne uno ad hoc permettendo simulazioni fedeli.</p>
+        </div>
+        <div class="p-6 rounded-2xl shadow">
+          <h4 class="font-semibold mb-2">UI Intuitiva</h4>
+          <p class="text-sm text-slate-600">UI disegnata ad HOC per permettere anche ai neofiti un facile utilizzo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Screenshots placeholders -->
+  <section id="screenshots" class="py-20">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-10">Screenshot</h3>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="h-48 bg-slate-200 rounded-2xl flex items-center justify-center text-slate-500"><img src="Images/PlcScanner-1.png" alt="PlcScanner Client Interface"></div>
+        <div class="h-48 bg-slate-200 rounded-2xl flex items-center justify-center text-slate-500"><img src="Images/PlcScanner-2.png" alt="PlcScanner Routine Editor1"></div>
+        <div class="h-48 bg-slate-200 rounded-2xl flex items-center justify-center text-slate-500"><img src="Images/PlcScanner-3.png" alt="PlcScanner Server Interface"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack -->
+  <section id="tech" class="bg-white py-20">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+      <h3 class="text-3xl font-bold mb-8">Tecnologie</h3>
+      <p class="text-slate-600">
+        .NET • C# • OPC UA Stack • SQL • Industrial Networking
+      </p>
+    </div>
+  </section>
+
+  <!-- Download -->
+  <section id="download" class="py-20 text-center">
+    <h3 class="text-3xl font-bold mb-6">Scarica PLCScanner</h3>
+    <p class="text-slate-600 mb-6">Disponibile per Windows</p>
+    <a target="_blank" href="https://github.com/ernestocalise/PlcScanner/releases/tag/Alpha" class="bg-blue-600 text-white px-8 py-4 rounded-2xl shadow hover:scale-105 transition text-lg">Download MSI</a>
+  </section>
+
+  <footer class="text-center text-xs text-slate-500 py-6">
+    © 2026 PLCScanner – Developed by Ernesto Calise
+  </footer>
+
+</body>
+<style>
+  #hero {
+    background-image:url('Images/HERO.png')
+  }
+</style>
+</html>
